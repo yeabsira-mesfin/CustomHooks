@@ -7,7 +7,7 @@ function useFetch(){
             const places = await fetchUserPlaces();
             setUserPlaces(places);
           } catch (error) {
-            setError({ message: error.message || 'Failed to fetch user places.' });
+            setError({ message: error.message || 'Failed ' });
           }
     
           setIsFetching(false);
